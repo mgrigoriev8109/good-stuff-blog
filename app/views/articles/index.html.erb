@@ -1,5 +1,10 @@
 <h1>Itsa bloga</h1>
 
+<ul>
 <% @articles.each do |article| %>
+    <li>
     <%= link_to article.title, article %>
+    </li>
 <% end %>
+</ul>
+<%= link_to "New blog post", new_article_path %>
